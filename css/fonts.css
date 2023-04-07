@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "CHINESER";
+  src: url("/assets/fonts/CHINESER.TTF");
+}
+
+@font-face {
+  font-family: "MabryPro-Light";
+  src: url("/assets/fonts/MabryPro-Light.ttf");
+}
+
+@font-face {
+  font-family: "WhyteInktrap-Light";
+  src: url("/assets/fonts/WhyteInktrap-Light.ttf");
+}

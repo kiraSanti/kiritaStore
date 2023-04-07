@@ -1,0 +1,28 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 24px;
+  /* border: 1px solid black; */
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  width: 100%;
+  /* border: 1px solid red; */
+  border-radius: 4px;
+}
+
+.partialContainer{
+  border: 2px solid seagreen;
+  border-radius: 8px;
+  margin: 4px;
+  padding: 12px;
+}

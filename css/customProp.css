@@ -1,0 +1,32 @@
+:root {
+    /* Colors 🌈 */
+  
+    --primary-color-light: lightgreen;
+    --primary-color-dark: khaki;
+    --secondary-color-light: papayawhip;
+    --secondary-color-dark: #725749;
+    --dark: #333;
+    --dark2: #161133;
+  
+    /* 🦖 Tipography */
+  
+    --primary-font: "MabryPro-Light";
+    --secondary-font: "CHINESER";
+  }
+
+  /* modo oscuro 🌚...  */
+@media (prefes-color-scheme: dark) {
+  :root {
+    --primary-color: ;
+    --secondary-color: ;
+  }
+}
+
+/* y al alto contrate ⚡...  */
+
+@media (prefers-contrast: high) {
+  :root {
+    --primary-color: ;
+    --secondary-color: ;
+  }
+}

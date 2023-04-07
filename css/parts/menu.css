@@ -1,0 +1,45 @@
+.imgContainer {
+  max-width: 100px;
+  margin: auto;
+}
+
+.categoriesContainer {
+  margin-top: 36px;
+  /* border: 1px solid blue;    */
+}
+
+.shirts {
+  /* border: 1px solid red; */
+  max-width: fit-content;
+  margin: auto;
+  margin-bottom: 8px;
+}
+
+.shirts:hover .camisetas {
+  margin-bottom: 8px;
+}
+
+.menuAnchor {
+  max-width: fit-content;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin: auto;
+  padding: 2px 4px;
+}
+
+.menuAnchor:hover {
+  text-decoration: line-through;
+  font-weight: bolder;
+}
+
+.menuAnchor:not(.camisetas) {
+  margin-bottom: 8px;
+}
+
+.subMenu {
+  display: none;
+}
+
+.shirts:hover .subMenu {
+  display: block;
+}

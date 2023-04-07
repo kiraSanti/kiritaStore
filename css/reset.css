@@ -1,0 +1,170 @@
+/* 📦📦📦 Aquí solucionamos los Problemas generales de box-model 📦📦📦*/
+
+/* Reseteamos el modelo de caja como tal... para que lo que definamos como width se respete sin importar el contenido del elemento o su padding*/
+
+html {
+  box-sizing: border-box;
+}
+
+/* Ponemos no solo el selector universal '*'
+sino también las pseudoclases ::before y ::after (ya que el '*' no las selecciona) */
+*,
+*::before,
+*::after {
+  box-sizing: inherit; /*aqui lo estaría heredando de 'html' */
+}
+
+/* ...y reseteamos margins, paddings, y borders de todas las etiquetas! */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /* border: 1px solid black; */
+}
+
+/* 📦📦📦📦📦📦📦📦📦📦📦📦📦📦📦 */
+
+/* Ahora vamos a resolver los problemas con imágenes y videos 🖼️ 🎞️  */
+
+img,
+picture,
+video,
+frame,
+figure {
+  max-width: 100%;
+  display: block;
+}
+
+/* 🖼️ 🎞️🖼️ 🎞️🖼️ 🎞️🖼️ 🎞️🖼️ 🎞️🖼️ 🎞️🖼️   */
+
+/* ⚓⚓⚓ Reseteamos los enlaces para que funcionen 
+como bloques ⚓⚓⚓*/
+
+a {
+  display: block;
+}
+
+/* ... exceptuando aquellos enlaces que se encuentren dentro de párrafos... */
+
+p a {
+  display: inline;
+}
+
+/* y hacemos que, al darle click a un ancla que nos lleva a otra parte de la página, ésta transición/desplazamiento se haga suavemente y no bruscamente :) ... */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ⚓⚓⚓⚓⚓⚓⚓⚓⚓⚓⚓⚓⚓⚓⚓⚓ */
+
+/* 📃📃📃 Quitamos los puntos de las listas...📃📃📃 */
+
+li {
+  list-style-type: none;
+}
+
+/* 📃📃📃📃📃📃📃📃📃📃📃📃📃📃📃📃📃 */
+
+/* 💈💈💈 Desactivamos estilos por defecto de las principales etiquetas de texto 💈💈💈*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 💈💈💈💈💈💈💈💈💈💈💈💈💈💈💈💈💈💈💈💈💈💈💈 */
+
+/* 👀👀👀 Evitamos problemas con los pseudoelementos de quotes... 👀👀👀*/
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+  content: none;
+}
+
+/* 👀👀👀👀👀👀👀👀👀👀👀👀👀👀👀 */
+
+/* 💅💅💅 Configuramos el color del texto que seleccionamos... 💅💅💅 */
+
+::selection {
+  background-color: var(--primary-color-light);
+  color: var(--);
+}
+
+/* 💅💅💅💅💅💅💅💅💅💅💅💅💅💅💅💅 */
+
+/* 👌👌👌 Solucionamos problemas de tipografía y colocación de formularios... 👌👌👌*/
+
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto; /* este lo q hace es que si el texto de una etiqueta no cabe... le pone un guión y la mueve el texto restante a otra línea*/
+  background-color: transparent;
+  display: block;
+  color: inherit;
+  appearance: none;
+}
+
+/* 👌👌👌👌👌👌👌👌👌👌👌👌👌👌👌👌👌👌👌👌👌 */
+
+/* 🏓🏓🏓 Reseteamos las tablas...🏓🏓🏓 */
+
+/* ...cuando se usan juntas, estas dos propiedades pueden usarse para crear tablas con bordes de celdas combinados y sin espacio adicional entre las celdas, lo que puede dar a las tablas una apariencia más limpia y ordenada. */
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 🏓🏓🏓🏓🏓🏓🏓🏓🏓🏓🏓🏓🏓🏓🏓 */
+
+/* 🍦🍦🍦 Evitamos problemas con los SVG 🍦🍦🍦 */
+
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+/* 🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦 */
+
+/* 🦖🦖🦖 Configuramos la tipografía para toda la web 🦖🦖🦖 */
+
+body {
+  min-height: 500vh;
+  font-size: 100%;
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  line-height: 1.4em;
+  hyphens: auto;
+}
+
+/* 🦖🦖🦖🦖🦖🦖🦖🦖🦖🦖🦖🦖🦖🦖🦖 */

@@ -1,0 +1,19 @@
+@media only screen and (min-width: 768px) {
+  .imgContainer {
+    margin: 0;
+  }
+
+  .categoriesContainer {
+    margin-left: 2px;
+  }
+
+  .shirts,
+  .menuAnchor:not(.camisetas, .sub1) {
+    margin: 0;
+    margin-bottom: 8px;
+  }
+
+  .sub1 {
+    margin-left: 4px;
+  }
+}
