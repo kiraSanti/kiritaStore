@@ -1,45 +1,54 @@
 .imgContainer {
   max-width: 100px;
   margin: auto;
+  margin-top: 12px;
+  /* border: 1px solid blue; */
 }
 
 .categoriesContainer {
-  margin-top: 36px;
-  /* border: 1px solid blue;    */
+  margin-top: 32px;
+  border: 1px solid blue;
 }
 
-.shirts {
-  /* border: 1px solid red; */
+.categoriesContainer * {
   max-width: fit-content;
   margin: auto;
-  margin-bottom: 8px;
 }
 
-.shirts:hover .camisetas {
+.mainMenu {
+  max-width: 100%;
+  /* border: 1px solid green; */
+}
+
+.categoriesContainer li {
+  border: 1px solid white;
+  /* border: 1px solid black; */
   margin-bottom: 8px;
 }
 
 .menuAnchor {
-  max-width: fit-content;
-  border: 1px solid black;
+  border: 1px solid hotpink;
   border-radius: 4px;
-  margin: auto;
   padding: 2px 4px;
 }
 
 .menuAnchor:hover {
-  text-decoration: line-through;
-  font-weight: bolder;
-}
-
-.menuAnchor:not(.camisetas) {
-  margin-bottom: 8px;
+  background-color: black;
+  color: hotpink;
+  text-decoration: line-through white;
 }
 
 .subMenu {
   display: none;
 }
 
+.shirts:hover {
+  max-width: 100%;
+  margin-bottom: 0px;
+}
+
 .shirts:hover .subMenu {
   display: block;
+  margin-top: 8px;
+  margin-bottom: 20px;
 }
